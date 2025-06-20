@@ -6,8 +6,7 @@ import About from './pages/About';
 import Register from './pages/Register';
 import Login from './pages/Contact';
 import Contact from './pages/Profile';
-import Header from './components/Header';
-import Footer from './components/Footer';
+
 
 
 

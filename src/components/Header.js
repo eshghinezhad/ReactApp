@@ -8,23 +8,14 @@ const Header = () => {
      <nav className="" style={{  padding: '10px'}}>
 
             <p> 
-                <img src={topLogo} className="topLogo" alt="Logo" />
-                
                 <a href="#" style={{  marginLeft: '60%', color: 'white',fontSize:'20px' }}>Home</a> | 
                 <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>About</a> | 
                 <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>Contact</a>
-
+                <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>Profile</a> |
+                <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>Register</a>
             </p>
       </nav>
- 
-    </header>
-    // <header className="App-header">
-       
-    //     <img src={topLogo} className="topLogo" alt="topLogo" />
- 
-                   
-    // </header>
-    
+    </header>    
   );
 }
 export default Header;
