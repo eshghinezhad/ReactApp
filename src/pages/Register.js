@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Register() {
   const [name, setName] = useState("");
@@ -13,6 +15,7 @@ function Register() {
 
   return (
     <div>
+      <Header />
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -35,6 +38,7 @@ function Register() {
         /><br />
         <button type="submit">Submit</button>
       </form>
+      <Footer/>
     </div>
   );
 }
