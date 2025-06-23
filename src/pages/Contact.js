@@ -4,12 +4,16 @@ import Footer from '../components/Footer';
 
 function Contact() {
   return (
-    <div>
-      <Header />
-      <h1>Contact Us</h1>
-      <p>If you have any questions or feedback, feel free to reach out to us!</p>
-         
-
+  <div style={{
+      display: 'grid',
+      gridTemplateRows: 'auto 1fr auto',
+      minHeight: '100vh'
+    }}>        
+    <Header />
+      <main style={{ padding: '2rem', textAlign: 'center' }}>
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us!</p>
+      </main>
       <Footer/>
     </div>
   )

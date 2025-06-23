@@ -6,12 +6,14 @@ import About from './pages/About';
 import Register from './pages/Register';
 import Contact from './pages/Contact';
 import Profile from './pages/Profile';
+import ProfileContext from './context/ProfileContext';
 
 
 
 
 const App = () => {
   return (
+    <ProfileContext.Provider value={{}}>
     <div className="App">
       <Router>
         <Routes>
@@ -24,6 +26,7 @@ const App = () => {
       </Router>
 
     </div>
+    </ProfileContext.Provider>
   );
 }
 

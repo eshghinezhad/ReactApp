@@ -14,30 +14,36 @@ function Register() {
   }
 
   return (
-    <div>
-      <Header />
-      <h2>Register</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Name"
-          value={name}
-          onChange={e => setName(e.target.value)}
-          required
-        /><br />
-        <input
-          placeholder="Email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          required
-        /><br />
-        <input
-          placeholder="Program"
-          value={program}
-          onChange={e => setProgram(e.target.value)}
-          required
-        /><br />
-        <button type="submit">Submit</button>
-      </form>
+    <div style={{
+      display: 'grid',
+      gridTemplateRows: 'auto 1fr auto',
+      minHeight: '100vh'
+    }}>        
+    <Header />
+    <main style={{ padding: '2rem', textAlign: 'center' }}>
+        <h2>Register</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            placeholder="Name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            required
+          /><br />
+          <input
+            placeholder="Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            required
+          /><br />
+          <input
+            placeholder="Program"
+            value={program}
+            onChange={e => setProgram(e.target.value)}
+            required
+          /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </main>
       <Footer/>
     </div>
   );
