@@ -18,12 +18,14 @@ function Profile() {
         <p>This is the Profile page of my application.</p>
 
         <ul>
-          {profiles.map((profile, idx) => (
-            <li key={idx}>
+          {profiles.map((profile, id) => (
+            <li key={id} style={{ marginBottom: '20px', textAlign: 'left' }}>
               <strong>Name:</strong> {profile.name} <br />
               <strong>Email:</strong> {profile.email} <br />
               <strong>Program:</strong> {profile.program}
+              <hr />  
             </li>
+
           ))}
       </ul>
       </main>

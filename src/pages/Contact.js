@@ -11,7 +11,7 @@ function Contact() {
     }}>        
     <Header />
       <main style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>Contact Us</h1>
+        <h1>Contact Us page</h1>
         <p>If you have any questions or feedback, feel free to reach out to us!</p>
       </main>
       <Footer/>

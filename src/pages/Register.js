@@ -12,8 +12,6 @@ function Register() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log({ name, email, program });
 
     addProfile({ name, email, program });
     setName('');
@@ -29,7 +27,7 @@ function Register() {
     }}>        
     <Header />
     <main style={{ padding: '2rem', textAlign: 'center' }}>
-        <h2>Register</h2>
+        <h1>Registeration page</h1>
         <form onSubmit={handleSubmit}>
           <input
             placeholder="Name"

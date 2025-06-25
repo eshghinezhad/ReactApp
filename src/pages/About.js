@@ -12,7 +12,7 @@ function About() {
     }}>        
     <Header />
       <main style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>Welcome to About Us page</h1>
+        <h1>About Us page</h1>
         <p>This is the About Us page of my application.</p>
       </main>
       <Footer />
