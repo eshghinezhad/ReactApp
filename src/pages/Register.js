@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext,useState } from "react";
+import ProfileContext from "../context/ProfileContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Register() {
+  const { addProfile } = useContext(ProfileContext);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [program, setProgram] = useState("");
@@ -11,6 +14,11 @@ function Register() {
     e.preventDefault();
     // Handle form submission logic here
     console.log({ name, email, program });
+
+    addProfile({ name, email, program });
+    setName('');
+    setEmail('');
+    setProgram('');
   }
 
   return (
@@ -41,7 +49,7 @@ function Register() {
             onChange={e => setProgram(e.target.value)}
             required
           /><br />
-          <button type="submit">Submit</button>
+          <button type="submit">Submit Profile</button>
         </form>
       </main>
       <Footer/>
